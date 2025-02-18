@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Aroma Signature+ - Beauty Care Products </title>
+</head>
+<body>
+    <header>
+        GET EXTRA 5% OFF ON PREPAID ORDERS
+    </header>
+    <nav class="navbar">
+        <!-- Logo aligned to the left -->
+        <div class="logo">
+            <img src="Images/logo.png" alt="Logo" class="me-2">
+        </div>
+
+        <!-- Search bar aligned to the right -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products...">
+        </div>
+
+        <!-- Nav toggler aligned to the right of the search bar -->
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    </nav>
+    <div class="menu" id="menu">
+        <a href="#">New Launch</a>
+        <a href="Skin Care- Facial Kits">Facial Kits</a>
+        <a href="Skin Care- Facial Kits">Skin Care</a>
+        <a href="#">Hair Care</a>
+        <a href="#">Hair Treatment</a>
+        <a href="#">Self Care</a>
+        <a href="#">Offers</a>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('menu').classList.toggle('show');
+        }
+    </script>
+
+
+
+
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="Images/Banner3.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="Images/Banner2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="Images/Banner1.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="Images/Banner4.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="Images/Banner5.jpg" style="width:100%">
+  </div>
+ 
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="Images/Banner3.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Banner2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Banner1.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Banner4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Banner5.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+
+  </div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+<section id="Skin Care -Facial Kits" class="container my-5">
+  <h2 class="text-left mb-4">Skin Care- Facial Kits</h2>
+  <div class="row">
+      <div class="col-md-4">
+          <div class="card">
+              <img src="Images/Bridal1.jpg" class="card-img-top" alt="Aroma Signature">
+              <div class="card-body text-center">
+                  <h3 class="card-title">Bridal Facial Kit</h3>
+                  <p class="card-text">Hydrating face cream for glowing skin.</p>
+                  <span class="fw-bold>Luxury 7 Step Facial  MRP: ₹ 1995/-</span>
+                  <span class="fw-bold">Mini 6 Step Facial  MRP: ₹ 495/-</span>
+                  <span class="fw-bold">Mini 6 Step Facial  MRP: ₹ 325/-</span>
+                  <div class="my-2">⭐️⭐️⭐️⭐️☆</div>
+                  <a href="https://wa.link/7psxx4" class="shop-btn">Shop Now</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card">
+              <img src="Images/DeTan.jpg" class="card-img-top" alt="Aroma Signature">
+              <div class="card-body text-center">
+                  <h3 class="card-title">Lip Balm</h3>
+                  <p class="card-text">Organic lip balm with nourishing oils.</p>
+                  <span class="fw-bold">MRP: $7.99</span>
+                  <div class="my-2">⭐️⭐️⭐️⭐️☆</div>
+                  <a href="https://wa.link/7psxx4" class="shop-btn">Shop Now</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card">
+              <img src="Images/Pearl Facial Kit.png" class="card-img-top" alt="Aroma Signature">
+              <div class="card-body text-center">
+                  <h3 class="card-title">Hair Serum</h3>
+                  <p class="card-text">Repairing serum for smooth, shiny hair.</p>
+                  <span class="fw-bold">MRP: $19.99</span>
+                  <div class="my-2">⭐️⭐️⭐️⭐️☆</div>
+                  <a href="https://wa.link/7psxx4" class="shop-btn">Shop Now</a>
+              </div>
+          </div>
+      </div>
+  <div class="col-md-4">
+    <div class="card">
+        <img src="Images/Redwine.jpg" class="card-img-top" alt="Aroma Signature">
+        <div class="card-body text-center">
+            <h3 class="card-title">Hair Serum</h3>
+            <p class="card-text">Repairing serum for smooth, shiny hair.</p>
+            <span class="fw-bold">MRP: $19.99</span>
+            <div class="my-2">⭐️⭐️⭐️⭐️☆</div>
+            <a href="https://wa.link/7psxx4" class="shop-btn">Shop Now</a>
+        </div>
+    </div>
+  </div>
+    <div class="col-md-4">
+      <div class="card">
+          <img src="Images/Whitening.jpg" class="card-img-top" alt="Aroma Signature">
+          <div class="card-body text-center">
+              <h3 class="card-title">Hair Serum</h3>
+              <p class="card-text">Repairing serum for smooth, shiny hair.</p>
+              <span class="fw-bold">MRP: $19.99</span>
+              <div class="my-2">⭐️⭐️⭐️⭐️☆</div>
+              <a href="https://wa.link/7psxx4" class="shop-btn">Shop Now</a>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+          <img src="Images/_Green Tea 4Web mini.png" class="card-img-top" alt="Aroma Signature">
+          <div class="card-body text-center">
+              <h3 class="card-title">Hair Serum</h3>
+              <p class="card-text">Repairing serum for smooth, shiny hair.</p>
+              <span class="fw-bold">MRP: $19.99</span>
+              <div class="my-2">⭐️⭐️⭐️⭐️☆</div>
+              <a href="https://wa.link/7psxx4" class="shop-btn">Shop Now</a>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+          <img src="Images/Papaya.jpg" class="card-img-top" alt="Aroma Signature">
+          <div class="card-body text-center">
+              <h3 class="card-title">Hair Serum</h3>
+              <p class="card-text">Repairing serum for smooth, shiny hair.</p>
+              <span class="fw-bold">MRP: $19.99</span>
+              <div class="my-2">⭐️⭐️⭐️⭐️☆</div>
+              <a href="https://wa.link/7psxx4" class="shop-btn">Shop Now</a>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+          <img src="Images/Fruit.jpg" class="card-img-top" alt="Aroma Signature">
+          <div class="card-body text-center">
+              <h3 class="card-title">Hair Serum</h3>
+              <p class="card-text">Repairing serum for smooth, shiny hair.</p>
+              <span class="fw-bold">MRP: $19.99</span>
+              <div class="my-2">⭐️⭐️⭐️⭐️☆</div>
+              <a href="https://wa.link/7psxx4" class="shop-btn">Shop Now</a>
+          </div>
+      </div>
+    </div>
+      <div class="col-md-4">
+        <div class="card">
+            <img src="Images/Anti Age.jpg" class="card-img-top" alt="Aroma Signature">
+            <div class="card-body text-center">
+                <h3 class="card-title">Hair Serum</h3>
+                <p class="card-text">Repairing serum for smooth, shiny hair.</p>
+                <span class="fw-bold">MRP: $19.99</span>
+                <div class="my-2">⭐️⭐️⭐️⭐️☆</div>
+                <a href="https://wa.link/7psxx4" class="shop-btn">Shop Now</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+              <img src="Images/Diamond.jpg" class="card-img-top" alt="Aroma Signature">
+              <div class="card-body text-center">
+                  <h3 class="card-title">Hair Serum</h3>
+                  <p class="card-text">Repairing serum for smooth, shiny hair.</p>
+                  <span class="fw-bold">MRP: $19.99</span>
+                  <div class="my-2">⭐️⭐️⭐️⭐️☆</div>
+                  <a href="https://wa.link/7psxx4" class="shop-btn">Shop Now</a>
+              </div>
+          </div>
+<div class="col-md-4">
+  <div class="card">
+      <img src="Images/Pearl Facial Kit.png" class="card-img-top" alt="Aroma Signature">
+      <div class="card-body text-center">
+          <h3 class="card-title">Hair Serum</h3>
+          <p class="card-text">Repairing serum for smooth, shiny hair.</p>
+          <span class="fw-bold">MRP: $19.99</span>
+          <div class="my-2">⭐️⭐️⭐️⭐️☆</div>
+          <a href="https://wa.link/7psxx4" class="shop-btn">Shop Now</a>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+
+
+    
+<footer class="container">
+    <div class="row">
+        <div class="col-md-3 footer-section contact-info">
+            <h5>Aroma Signature+</h5>
+            <p>+91 8086397777</p>
+            <p>aromasignature2001@gmail.com</p>
+            <div class="social-icons">
+                
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="https://wa.link/7psxx4"><i class="fa fa-whatsapp"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="col-md-3 footer-section">
+            <h5>Useful Links</h5>
+            <a href="#">New Products</a>
+            <a href="#">Best Sellers</a>
+            <a href="#">Bundle & Save</a>
+            <a href="#">Online Gift Card</a>
+        </div>
+        <div class="col-md-3 footer-section">
+            <h5>Information</h5>
+            <a href="#">Start a Return</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Shipping FAQ</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <div class="col-md-3 footer-section">
+            <h5>Good Emails</h5>
+            <p>Enter your email below to be the first to know about new collections and product launches.</p>
+            <form>
+                <input type="email" class="form-control mb-2" placeholder="Enter your email address">
+                <button class="btn btn-success w-100">Subscribe</button>
+            </form>
+        </div>
+    </div>
+        <div class="text-center mt-3 border-top pt-3">
+            © 2025 Aroma Signature+. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

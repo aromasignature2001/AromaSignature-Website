@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: #0d6419;
+    color: white;
+    padding: 2px 20px;
+    text-align: center;
+    font-size: 12px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.logo {
+    display: flex;
+    justify-content: flex-start; /* Align logo to the left */
+}
+.logo img {
+    height: 60px; /* Reduced logo size */
+}
+.search-bar {
+    position: relative;
+    margin-left: auto; /* Align search box to the right */
+    width: 250px; /* Set a fixed width for the search box */
+    max-width: 100%; /* Allow search box to be responsive */
+}
+.search-bar input {
+    width: 100%;
+    padding: 8px 40px 8px 12px; /* Add space for the search icon */
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+.search-bar .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #ccc;
+}
+.menu-icon {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 15px; /* Space between search bar and menu icon */
+}
+.menu {
+    display: flex;
+    gap: 15px;
+}
+.menu a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;  /* Keep row layout for the navbar */
+        align-items: center;
+    }
+    .search-bar {
+        width: 180px; /* Smaller width for mobile */
+        margin: 10px 0;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .menu.show {
+        display: flex;
+    }
+    .menu-icon {
+        display: block;
+    }
+
+
+    
+
+    * {
+        box-sizing: border-box;
+      }
+      
+      img {
+        vertical-align: middle;
+      }
+      
+      /* Position the image container (needed to position the left and right arrows) */
+      .container {
+        position: relative;
+      }
+      
+      /* Hide the images by default */
+      .mySlides {
+        display: none;
+      }
+      
+      /* Add a pointer when hovering over the thumbnail images */
+      .cursor {
+        cursor: pointer;
+      }
+      
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      
+      /* Container for image text */
+      .caption-container {
+        text-align: center;
+        background-color: #0d6419;
+        padding: 0px 0px;
+        color: white;
+      }
+      
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Six columns side by side */
+      .column {
+        float: left;
+        width: 16.66%;
+      }
+      
+      /* Add a transparency effect for thumnbail images */
+      .demo {
+        opacity: 0.6;
+      }
+      
+      .active,
+      .demo:hover {
+        opacity: 1;
+      }
+    
+      .shop-btn {
+        background-color: #28a745;
+        color: #fff;
+        text-decoration: none;
+        padding: 8px 12px;
+        border-radius: 5px;
+    }
+
+
+
+}
+footer {
+    background-color: #000;
+    color: white;
+    padding: 40px 0;
+}
+.footer-section {
+    margin-bottom: 20px;
+}
+.footer-section h5 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+.footer-section p, .footer-section a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+.footer-section a:hover {
+    color: #0d6419;
+}
+.social-icons a {
+    font-size: 18px;
+    margin-right: 8px;
+}
+@media (max-width: 768px) {
+    .footer-section {
+        margin-bottom: 30px; /* Increased space between sections */
+    }
+    .contact-info p {
+        margin-bottom: 3px; /* Reduced space between Our Store, Contact, and Email */
+    }
+}
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+.social-icons a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+.social-icons a:hover {
+    color: #0d6419;
+}
